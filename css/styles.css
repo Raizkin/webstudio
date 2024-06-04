@@ -11,7 +11,7 @@
 /* font-family: "Raleway", sans-serif; */
 /* font-family: "Roboto", sans-serif; */
 
-.logo_span1 {
+.logo-span1 {
     color: var(--accent-color);
     font-family: Raleway;
     font-size: 26px;
@@ -20,7 +20,7 @@
     letter-spacing: 0.78px;
 }
 
-.logo_span2 {
+.logo-span2 {
     color: var(--logo-color);
     font-family: Raleway;
     font-size: 26px;
@@ -29,7 +29,7 @@
     letter-spacing: 0.78px;
 }
 
-.header_nav {
+.header-nav {
     color: var(--accent-color);
     font-family: Roboto;
     font-size: 14px;
@@ -38,7 +38,7 @@
     letter-spacing: 0.28px;
 }
 
-.header_roster_item1 {
+.header-roster-item1 {
     color: var(--accent-color);
     font-family: Roboto;
     font-size: 14px;
@@ -47,7 +47,7 @@
     letter-spacing: 0.28px;
 }
 
-.header_roster_item2 {
+.header-roster-item2 {
     color: var(--desk-color);
     font-family: Roboto;
     font-size: 14px;
@@ -55,8 +55,11 @@
     line-height: 1.14;
     letter-spacing: 0.28px;
 }
+.decision {
+background-color: var(--background-color);
+}
 
-.decision_title {
+.decision-title {
     color: var(--title-color);
     text-align: center;
     font-family: Roboto;
@@ -67,7 +70,7 @@
     text-transform: uppercase;
 }
 
-.decision_btn {
+.decision-btn {
     color: var(--title-color);
     text-align: center;
     font-family: Roboto;
@@ -81,7 +84,7 @@
     box-shadow: 0px 4px 4px 0px;
 }
 
-.we_title {
+.we-title {
     color: var(--color);
     font-family: Roboto;
     font-size: 14px;
@@ -91,7 +94,7 @@
     text-transform: uppercase;
 }
 
-.we_subtitle {
+.we-subtitle {
     color: var(--desk-color);
     font-family: Roboto;
     font-size: 14px;
@@ -100,7 +103,7 @@
     letter-spacing: 0.42px;
 }
 
-.make_title {
+.make-title {
     color: var(--color);
     text-align: center;
     font-family: Roboto;
@@ -110,13 +113,13 @@
     letter-spacing: 1.08px;
 }
 
-.make_img {
+.make-img {
     width: 370px;
     height: 294px;
     flex-shrink: 0;
 }
 
-.team_title {
+.team-title {
     color: var(--color);
     text-align: center;
     font-family: Roboto;
@@ -126,13 +129,13 @@
     letter-spacing: 1.08px;
 }
 
-.team_img {
+.team-img {
     width: 270px;
     height: 260px;
     flex-shrink: 0;
 }
 
-.team_heading {
+.team-heading {
     color: var(--color);
     text-align: center;
     font-family: Roboto;
@@ -142,7 +145,7 @@
     letter-spacing: 0.48px;
 }
 
-.team_text {
+.team-text {
     color: #757575;
     text-align: center;
     font-family: Roboto;
@@ -151,8 +154,11 @@
     line-height: 1.19;
     letter-spacing: 0.48px;
 }
+.footer {
+background-color: var(--background-color);
+}
 
-.footer_addres {
+.footer-addres {
     color: var(--title-color);
     font-family: Roboto;
     font-size: 14px;
@@ -161,7 +167,7 @@
     letter-spacing: 0.42px;
 }
 
-.footer_link {
+.footer-link {
     color: var(--desk-color);
     font-family: Roboto;
     font-size: 14px;
