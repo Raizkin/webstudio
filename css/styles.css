@@ -7,27 +7,41 @@
   --background-color1: #F5F4FA;
   --background-color: #2F303A;
 }
+/* font-family: "Raleway", sans-serif; */
+/* font-family: "Roboto", sans-serif; */
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 a {
-text-decoration: none;
+  text-decoration: none;
+
 }
+
 img {
-display: block;
-}
-ul {
-list-style: none;
-margin: 0;
-padding: 0;
-}
-h1,h2,h3,h4,p {
-margin: 0;
+  display: block;
 }
 
-/* header footer */
-
-body {
-font-family: "Roboto", sans-serif;
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;   
 }
+
+/* Хеадер та футер */
+
+header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .logo-span1 {
   color: var(--accent-color);
   font-family: Raleway;
@@ -48,46 +62,37 @@ font-family: "Roboto", sans-serif;
 
 .header-nav {
   color: var(--color);
+  font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
 }
 
-.header-nav:hover,
-.header-nav:focus{
-color: var(--accent-color);
-}
-
-.header-link {
-  color: var(--desk-color);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.28px;
-}
-.header-link:hover,
-.header-link:focus {
-color: var(--accent-color);
-}
-
-
-.header-roster-item1 {
+.header-nav:hover {
   color: var(--accent-color);
   font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
-}
+} 
 
-.header-roster-item2 {
+.header-roster-item {
   color: var(--desk-color);
   font-family: Roboto;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
+}
+
+.header-roster-item:hover {
+  color: var(--accent-color);
+}
+
+.footer {
+  background-color: var(--background-color);
 }
 
 .footer-addres {
@@ -108,11 +113,14 @@ color: var(--accent-color);
   letter-spacing: 0.42px;
 }
 
-/* main */
+/* Головна */
 
 .decision {
-background-color: var(--background-color);
+  background-color: var(--background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
+
 .decision-title {
   color: var(--title-color);
   text-align: center;
@@ -209,41 +217,19 @@ background-color: var(--background-color);
   letter-spacing: 0.48px;
 }
 
-.footer {
-background-color: var(--background-color);
-}
-.span-footer1 {
-  color: var(--accent-color);
-  font-family: Raleway;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.38;
-  letter-spacing: 0.78px;
-}
+/* Портфоліо */
 
-.span-footer2 {
-color: var(--title-color);
-font-family: Raleway;
-font-size: 26px;
-font-weight: 700;
-line-height: 1.38;
-letter-spacing: 0.78px;
-}
-
-
-/* portfolio */
-
-.btn-btn1 {
+.btn-btn:hover {
   color: var(--title-color);
   text-align: center;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
-  line-height: 26px; /* 162.5% */
+  line-height: 1.62; /* 162.5% */
   letter-spacing: 0.48px;
   border-radius: 4px;
   background: #2196F3;
-}
+
 
 .btn-btn {
   color: var(--color);
@@ -251,7 +237,7 @@ letter-spacing: 0.78px;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
-  line-height: 26px; /* 162.5% */
+  line-height: 1.62; /* 162.5% */
   letter-spacing: 0.48px;
 
   border-radius: 4px;
@@ -259,20 +245,31 @@ letter-spacing: 0.78px;
 }
 
 .goods-title {
-  color: var(--color);
+  color: var(--desk-color);
   font-family: Roboto;
   font-size: 18px;
   font-weight: 700;
-  line-height: 36px; /* 200% */
+  line-height: 2; /* 200% */
   letter-spacing: 1.08px;
 }
 
 .goods-caption {
-  color: var(--desk-color);
+  color: var(--color);
   font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
-  line-height: 30px; /* 187.5% */
+  line-height: 1.88; /* 187.5% */
+  letter-spacing: 0.48px;
+}
+
+.goods-text {
+  color: var(--desk-color);
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.88; /* 187.5% */
   letter-spacing: 0.48px;
 }
 
@@ -280,6 +277,4 @@ letter-spacing: 0.78px;
   width: 370px;
   height: 294px;
   flex-shrink: 0;
-
-  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
