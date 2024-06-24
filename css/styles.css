@@ -35,7 +35,7 @@ img {
   margin: 0 auto;   
 }
 
-/* header and footer */
+/* header */
 
 header {
   padding-top: 24px;
@@ -102,7 +102,7 @@ header {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.71; /* 171.429% */
+  line-height: 1.71;
   letter-spacing: 0.42px;
 }
 
@@ -111,11 +111,11 @@ header {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.71; /* 171.429% */
+  line-height: 1.71;
   letter-spacing: 0.42px;
 }
 
-/* Головна */
+/* Main */
 
 .decision {
   background-color: var(--background-color);
@@ -148,6 +148,8 @@ header {
   box-shadow: 0px 4px 4px 0px;
 }
 
+ /* We */
+
 .we-title {
   color: var(--color);
   font-family: Roboto;
@@ -167,6 +169,8 @@ header {
   letter-spacing: 0.42px;
 }
 
+/* What does we do */
+
 .make-title {
   color: var(--color);
   text-align: center;
@@ -182,6 +186,8 @@ header {
   height: 294px;
   flex-shrink: 0;
 }
+
+/* Team */
 
 .team-title {
   color: var(--color);
@@ -218,9 +224,38 @@ header {
   line-height: 1.19;
   letter-spacing: 0.48px;
 }
+/* Footer */
 
+.footer {
+  background-color: var(--background-color);
+}
+.logo-span3 {
+  color: var(--title-color)
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.38;
+  letter-spacing: 0.78px;
+}
 
-/* Портфоліо */
+.footer-addres {
+  color: var(--title-color);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+
+.footer-link {
+  color: var(--desk-color);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+
+/* Portfolio */
 
 .btn-btn:hover {
   color: var(--title-color);
@@ -254,6 +289,10 @@ header {
   font-weight: 700;
   line-height: 2; /* 200% */
   letter-spacing: 1.08px;
+}
+
+.goods-img {
+  width: 370px;
 }
 
 .goods-caption {
