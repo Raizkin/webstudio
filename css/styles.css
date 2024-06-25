@@ -230,7 +230,7 @@ header {
   background-color: var(--background-color);
 }
 .logo-span3 {
-  color: var(--title-color)
+  color: var(--title-color);
   font-size: 26px;
   font-weight: 700;
   line-height: 1.38;
