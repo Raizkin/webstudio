@@ -331,9 +331,13 @@ background-color: var(--title-color);
   color:var(--title-color);
 }
 
+.footer-addres {
+margin-top: 20px;
+}
+
 .footer-link1{
   color: var(--title-color);
-  margin-top: 20px;
+
 }
 
 .footer-link {
@@ -343,6 +347,7 @@ background-color: var(--title-color);
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
+  margin-top: 9px;
 }
 
 /* Portfolio */
