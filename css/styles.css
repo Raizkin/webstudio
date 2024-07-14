@@ -275,14 +275,11 @@ gap: 50px;
 
 .team-items {
   display: flex;
-  flex-direction: row;
   gap: 30px;
 }
 
 .team-img {
   width: 270px;
-  height: 260px;
-  flex-shrink: 0;
 }
 
 .team-box {
