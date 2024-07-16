@@ -468,6 +468,10 @@ background-color: var(--title-color);
   gap: 30px;
 }
 
+.goods-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
 .goods-box {
   border: 1px solid var(--border-color);
   border-top: none;
@@ -476,6 +480,15 @@ background-color: var(--title-color);
   padding-left: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.goods-item:hover {
+  width: 370px;
+  height: 399px;
+  border: 1px solid var(--border-color);
+  background: var(--title-color);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+  border: none;
 }
 
 .goods-caption {
@@ -498,5 +511,5 @@ background-color: var(--title-color);
 }
 
 .goods-img {
-  width: 370px;
+  width: 100%;
 }
