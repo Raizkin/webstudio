@@ -185,7 +185,7 @@ gap: 50px;
   font-weight: 700;
   line-height: 1.88; /* 187.5% */
   letter-spacing: 0.96px;
-  
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px 0px;
@@ -327,6 +327,7 @@ gap: 50px;
 padding-top: 30px;
 padding-bottom: 30px;
 background-color: var(--title-color);
+box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 }
 
 .team-heading {
@@ -431,7 +432,6 @@ gap: 9px;
   padding-right: 25px;
   padding-left: 25px;
   border: none;
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 
 .goods-btn2 {
@@ -441,7 +441,6 @@ gap: 9px;
   font-weight: 500;
   line-height: 1.62; /* 162.5% */
   letter-spacing: 0.48px;
-
   border-radius: 4px;
   background: var(--background-color1);
   padding-top: 6px;
@@ -449,7 +448,7 @@ gap: 9px;
   padding-right: 22px;
   padding-left: 22px;
   border: none;
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+
 }
 
 .goods-btn2:hover {
@@ -487,6 +486,7 @@ gap: 9px;
   padding-left: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 
 .goods-item:hover {
@@ -494,7 +494,6 @@ gap: 9px;
   height: 399px;
   border: 1px solid var(--border-color);
   background: var(--title-color);
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
   border: none;
 }
 
