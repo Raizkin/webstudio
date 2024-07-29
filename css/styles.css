@@ -86,6 +86,15 @@ gap: 50px;
 margin-right: 344px;
 }
 
+.header-nav_ {
+  color: var(--accent-color);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.28px;
+}
+
 .header-nav {
   color: var(--color);
   font-family: Roboto;
@@ -158,7 +167,11 @@ gap: 50px;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-image: url(../img/weworking.jpg);
+  background-image: linear-gradient(
+  rgba(47, 48, 58, 0.40),
+  rgba(47, 48, 58, 0.40)
+),
+  url(../img/weworking.jpg);
   background-repeat: no-repeat;
 }
 
@@ -186,7 +199,7 @@ gap: 50px;
   line-height: 1.88; /* 187.5% */
   letter-spacing: 0.96px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); #2196F3
- border-radius: 4px;
+  border-radius: 4px;
   background: var(--accent-color);
   padding-top: 10px;
   padding-bottom: 10px;
@@ -434,24 +447,7 @@ gap: 9px;
   border: none;
 }
 
-.goods-btn2 {
-  color: var(--color);
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.62; /* 162.5% */
-  letter-spacing: 0.48px;
-  border-radius: 4px;
-  background: var(--background-color1);
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-right: 22px;
-  padding-left: 22px;
-  border: none;
-
-}
-
-.goods-btn2:hover {
+.goods-btn:hover {
   color: var(--title-color);
   text-align: center;
   font-size: 16px;
@@ -462,10 +458,11 @@ gap: 9px;
   background: var(--accent-color);
   padding-top: 6px;
   padding-bottom: 6px;
-  padding-right: 22px;
-  padding-left: 22px;
+  padding-right: 25px;
+  padding-left: 25px;
   border: none;
-  
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+
 }
 
 .goods-items {
