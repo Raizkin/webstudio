@@ -101,12 +101,15 @@ header > .container {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
-  transition: 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
-.header-nav-portfolio,
+
 .header-nav-golovna {
   color: var(--accent-color);
+}
+
+.header-nav-portfolio {
+color: var(--accent-color);
 }
 
 .header-nav:hover,
@@ -304,6 +307,24 @@ header > .container {
   width: 370px;
 }
 
+.make-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58,0.80);
+  color: var(--title-color);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+  text-transform: uppercase; 
+}
+
 /* Team */
 
 .team {
@@ -374,18 +395,24 @@ header > .container {
   gap: 10px;
 }
 
+.team-element {
+}
+
+
 .team-element-link {
   display: flex;
   align-items: center;
   padding: 12px 12px 12px 12px;
   background-color: var(--title-color);
   border-radius: 50%;
-  transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+  
 }
 
 .team-element-link:hover,
 .team-element-link:focus {
   background-color: var(--accent-color);
+  border: 0px;
+  outline: var(--accent-color);
   .team-element-img {
     fill: var(--title-color);
   }
@@ -430,10 +457,13 @@ header > .container {
   border: 1px solid var(--cliens-border);
 }
 
-.clients-link:hover {
+.clients-link:hover,:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
+  outline: var(--accent-color);
 }
+
+
 .clients-img {
   width: 106px;
   height: 60px;
