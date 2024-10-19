@@ -309,7 +309,7 @@ header>.container {
   flex-shrink: 0;
   display: block;
   border-radius: 4px;
-  background-image: url(../img/planing.jpg);
+  background-image: url(../img/trading.jpg);
 }
 
 .we-item:nth-child(4):before {
@@ -319,7 +319,7 @@ header>.container {
   flex-shrink: 0;
   display: block;
   border-radius: 4px;
-  background-image: url(../img/kosmonaft.jpg);
+  background-image: url(../img/superman.jpg);
 }
 
 .we-title {
