@@ -3,7 +3,7 @@
     padding-bottom: 94px;
 }
 
-.make-title {
+.make__title {
     color: var(--color);
     text-align: center;
     font-size: 36px;
@@ -13,22 +13,22 @@
     margin-bottom: 50px;
 }
 
-.make-items {
+.make__items {
     display: flex;
     gap: 30px;
 }
 
-.make-item {
+.make__item {
     position: relative;
 }
 
-.make-img {
+.make__img {
     width: 370px;
     height: 294px;
     flex-shrink: 0;
 }
 
-.make-text {
+.make__text {
     display: flex;
     justify-content: center;
     align-items: center;

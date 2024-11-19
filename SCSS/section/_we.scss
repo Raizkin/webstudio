@@ -3,12 +3,12 @@
     display: flex;
 }
 
-.we-items {
+.we__items {
     display: flex;
     gap: 30px;
 }
 
-.we-item:nth-child(1):before {
+.we__item:nth-child(1):before {
     content: "";
     width: 270px;
     height: 120px;
@@ -18,7 +18,7 @@
     background-image: url(../img/antena.jpg);
 }
 
-.we-item:nth-child(2):before {
+.we__item:nth-child(2):before {
     content: "";
     width: 270px;
     height: 120px;
@@ -28,7 +28,7 @@
     background-image: url(../img/timer.jpg);
 }
 
-.we-item:nth-child(3):before {
+.we__item:nth-child(3):before {
     content: "";
     width: 270px;
     height: 120px;
@@ -38,7 +38,7 @@
     background-image: url(../img/trading.jpg);
 }
 
-.we-item:nth-child(4):before {
+.we__item:nth-child(4):before {
     content: "";
     width: 270px;
     height: 120px;
@@ -48,7 +48,7 @@
     background-image: url(../img/superman.jpg);
 }
 
-.we-title {
+.we__title {
     color: var(--color);
     font-size: 14px;
     font-weight: 700;
@@ -59,7 +59,7 @@
     margin-top: 30px;
 }
 
-.we-subtitle {
+.we__subtitle {
     color: var(--desk-color);
     font-size: 14px;
     font-weight: 400;
