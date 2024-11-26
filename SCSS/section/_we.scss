@@ -48,7 +48,7 @@
 }
 
 &__title {
-    color: var(--color);
+    color: $color;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
@@ -59,7 +59,7 @@
 }
 
 &__subtitle {
-    color: var(--desk-color);
+    color: $desk-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;

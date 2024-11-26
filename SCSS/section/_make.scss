@@ -3,7 +3,7 @@
     padding-bottom: 94px;
 
 &__title {
-    color: var(--color);
+    color: $color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -36,7 +36,7 @@
     width: 370px;
     height: 70px;
     background-color: rgba(47, 48, 58, 0.8);
-    color: var(--title-color);
+    color: $title-color;
     text-align: center;
     font-family: Roboto;
     font-size: 14px;

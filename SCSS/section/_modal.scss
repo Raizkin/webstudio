@@ -19,14 +19,14 @@
 .modal {
     padding: 40px;
     border-radius: 4px;
-    background: var(--title-color);
+    background: $title-color;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
     position: relative;
 }
 
 .modal__title {
-    color: var(--modal-color);
+    color: $modal-color;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
@@ -36,7 +36,7 @@
 }
 
 .modal__signature {
-    color: var(--desk-color);
+    color: $desk-color;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.67;
@@ -55,7 +55,7 @@
     display: block;
     margin-bottom: 10px;
     border-radius: 4px;
-    border: 1px solid var(--modal-border-color);
+    border: 1px solid $modal-border-color;
     padding-left: 42px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -63,12 +63,12 @@
 .modal__input:hover,
 .modal__input:focus {
     outline: none;
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
 }
 
 .modal__input:hover+.modal__input-img,
 .modal__input:focus+.modal__input-img {
-    fill: var(--accent-color);
+    fill: $accent-color;
 }
 
 .modal__input-img {
@@ -85,10 +85,10 @@
     width: 448px;
     height: 120px;
     border-radius: 4px;
-    border: 1px solid var(--modal-border-color);
+    border: 1px solid $modal-border-color;
     resize: none;
     padding: 12px 16px;
-    color: var(--modal-placehorlder);
+    color: $modal-placehorlder;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.17;
@@ -100,7 +100,7 @@
 
 .modal__textarea:hover,
 .modal__textarea:focus {
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
     outline: none;
 }
 
@@ -117,7 +117,7 @@
 }
 
 .modal__text {
-    color: var(--desk-color);
+    color: $desk-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
@@ -125,7 +125,7 @@
 }
 
 .modal__link {
-    color: var(--accent-color);
+    color: $accent-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
@@ -136,10 +136,10 @@
 .modal__btn {
     padding: 10px 52px;
     border-radius: 4px;
-    background: var(--modal-btn);
+    background: $modal-btn;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
-    color: var(--title-color);
+    color: $title-color;
     text-align: center;
     font-size: 16px;
     font-weight: 700;
@@ -153,8 +153,8 @@
 
 .modal__btn:hover,
 .modal__btn:focus {
-    background-color: var(--clients-border);
-    color: var(--background-color);
+    background-color: $clients-border;
+    color: $background-color;
     cursor: pointer;
     outline: none;
 }
@@ -166,9 +166,9 @@
     position: absolute;
     right: 8px;
     top: 8px;
-    background-color: var(--title-color);
+    background-color: $title-color;
     border-radius: 50%;
-    border: 1px solid var(--modal-border-color);
+    border: 1px solid $modal-border-color;
     padding: 6px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -184,7 +184,7 @@
     outline: none;
 
     .modal__close-img {
-        fill: var(--accent-color);
+        fill: $accent-color;
         cursor: pointer;
     }
 }
