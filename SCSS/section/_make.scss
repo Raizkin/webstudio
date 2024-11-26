@@ -1,9 +1,8 @@
 .make {
     padding-top: 94px;
     padding-bottom: 94px;
-}
 
-.make__title {
+&__title {
     color: var(--color);
     text-align: center;
     font-size: 36px;
@@ -13,22 +12,22 @@
     margin-bottom: 50px;
 }
 
-.make__items {
+&__items {
     display: flex;
     gap: 30px;
 }
 
-.make__item {
+&__item {
     position: relative;
 }
 
-.make__img {
+&__img {
     width: 370px;
     height: 294px;
     flex-shrink: 0;
 }
 
-.make__text {
+&__text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,4 +44,6 @@
     line-height: 1.14;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+}
+
 }
