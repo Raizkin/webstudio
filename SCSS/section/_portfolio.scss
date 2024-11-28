@@ -3,13 +3,14 @@
     padding-bottom: 50px;
 }
 
-&__list {
+.goods-list {
     display: flex;
     justify-content: center;
     gap: 8px;
     margin-bottom: 50px;
+}
 
-    &__btn {
+.goods-btn {
     color: $color;
     text-align: center;
     font-size: 16px;
@@ -28,8 +29,8 @@
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&__btn:hover,
-&__btn:focus {
+.goods-btn:hover,
+.goods-btn:focus {
     cursor: pointer;
     color: $title-color;
     text-align: center;
@@ -45,53 +46,50 @@
     outline: none;
 }
 
-
-&__items {
+.goods-items {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-
-&__item {
+.goods-item {
     flex-basis: calc((100% - 60px) / 3);
     position: relative;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&__item:hover,
-&__item:focus {
-    &__background {
+.goods-item:hover,
+.goods-item:focus {
+    .goods-background {
         opacity: 1;
         transform: translateY(-294px);
     }
 }
 
-&__item:hover,
-&__item:focus-within {
+.goods-item:hover,
+.goods-item:focus-within {
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-&__item:focus-within &__opacity {
+.goods-item:focus-within .goods-opacity {
     opacity: 1;
 }
 
-&__link:focus {
+.goods-link:focus {
     outline: none;
 }
 
-&__wrraper {
+.goods-wrraper {
     position: relative;
     overflow: hidden;
 }
 
-&__img {
+.goods-img {
     width: 100%;
 }
 
-
-&__background {
+.goods-background {
     background: rgba(33, 150, 243, 0.9);
     position: absolute;
     padding: 63px 24px;
@@ -102,7 +100,7 @@
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&__background-text {
+.goods-background-text {
     color: $title-color;
     font-size: 18px;
     font-weight: 400;
@@ -110,7 +108,7 @@
     letter-spacing: 0.54px;
 }
 
-&__box {
+.goods-box {
     border: 1px solid $border-color;
     border-top: none;
     width: 370px;
@@ -120,7 +118,7 @@
     padding-bottom: 20px;
 }
 
-&__caption {
+.goods-caption {
     color: $color;
     font-size: 16px;
     font-weight: 700;
@@ -129,12 +127,10 @@
     margin-bottom: 4px;
 }
 
-&__text {
+.goods-text {
     color: $desk-color;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.88;
     letter-spacing: 0.48px;
-}
-
 }
