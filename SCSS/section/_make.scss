@@ -1,10 +1,9 @@
 .make {
     padding-top: 94px;
     padding-bottom: 94px;
-}
 
-.make-title {
-    color: var(--color);
+&__title {
+    color: $color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -13,22 +12,22 @@
     margin-bottom: 50px;
 }
 
-.make-items {
+&__items {
     display: flex;
     gap: 30px;
 }
 
-.make-item {
+&__item {
     position: relative;
 }
 
-.make-img {
+&__img {
     width: 370px;
     height: 294px;
     flex-shrink: 0;
 }
 
-.make-text {
+&__text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +36,7 @@
     width: 370px;
     height: 70px;
     background-color: rgba(47, 48, 58, 0.8);
-    color: var(--title-color);
+    color: $title-color;
     text-align: center;
     font-family: Roboto;
     font-size: 14px;
@@ -45,4 +44,6 @@
     line-height: 1.14;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+}
+
 }

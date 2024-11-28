@@ -1,11 +1,10 @@
 .team {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: var(--background-color1);
-}
+    background-color: $background-color1;
 
-.team-title {
-    color: var(--color);
+    &__title {
+    color: $color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -14,34 +13,34 @@
     margin-bottom: 50px;
 }
 
-.team-item {
+&__item {
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-    background-color: var(--title-color);
+    background-color: $title-color;
     padding-bottom: 30px;
 }
 
-.box-team-item {
+&__box-item {
     padding-top: 30px;
     padding-bottom: 16px;
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-items {
+&__items {
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
 
-.team-img {
+&__img {
     width: 270px;
     height: 260px;
     flex-shrink: 0;
 }
 
-.team-heading {
-    color: var(--color);
+&__heading {
+    color: $color;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -50,7 +49,7 @@
     margin-bottom: 10px;
 }
 
-.team-text {
+&__text {
     color: #757575;
     text-align: center;
     font-size: 16px;
@@ -59,35 +58,37 @@
     letter-spacing: 0.48px;
 }
 
-.team-list {
+&__list {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.team-element-link {
+&__element-link {
     display: flex;
     align-items: center;
     padding: 12px 12px 12px 12px;
-    background-color: var(--title-color);
+    background-color: $title-color;
     border-radius: 50%;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-element-link:hover,
-.team-element-link:focus {
+&__element-link:hover,
+&__element-link:focus {
     outline: none;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
 
-    .team-element-img {
-        fill: var(--title-color);
+    &__element-img {
+        fill: $title-color;
     }
 }
 
-.team-element-img {
+&__element-img {
     width: 20px;
     height: 20px;
-    fill: var(--clients-border);
+    fill: $clients-border;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 }
