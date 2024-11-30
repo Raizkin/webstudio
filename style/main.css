@@ -1,11 +1,9 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {
@@ -14,18 +12,32 @@ ul {
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
 img {
   display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 .container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 body {
@@ -39,13 +51,34 @@ body {
 
 .header {
   padding-top: 24px;
-  padding-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 26px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 25px 0;
+  }
 }
 .header__portfolio {
   border-bottom: 1px solid #ececec;
 }
 .header__logo {
   margin-right: 93px;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    font-size: 26px;
+    letter-spacing: 0.78px;
+    margin-right: 93px;
+  }
 }
 .header__logo-first {
   color: #2196f3;
