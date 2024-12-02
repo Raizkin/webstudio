@@ -514,8 +514,12 @@ body {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0px;
+  }
 }
 .clients__title {
   color: #212121;
@@ -529,6 +533,19 @@ body {
 .clients__items {
   display: flex;
   justify-content: space-between;
+}
+.clients__item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 .clients__link {
   display: flex;
