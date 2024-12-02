@@ -532,7 +532,8 @@ body {
 }
 .clients__items {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 .clients__item {
   flex-basis: calc((100% - 30px) / 2);
@@ -553,10 +554,20 @@ body {
   justify-content: center;
   border-radius: 4px;
   border: 1px solid #afb1b8;
-  width: 170px;
+  width: 210px;
   height: 92px;
   fill: #afb1b8;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 .clients__link:hover, .clients__link:focus {
   outline: none;
@@ -570,12 +581,36 @@ body {
 
 .footer > .container {
   display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 0px auto;
+  gap: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer > .container {
+    text-align: start;
+  }
 }
 
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer__address-box {
+  width: 100%;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__address-box {
+    width: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__address-box {
+    margin-right: 70px;
+    text-align: start;
+  }
 }
 .footer__logo-first {
   color: #2196f3;
@@ -592,6 +627,19 @@ body {
   font-weight: 700;
   line-height: 1.38;
   letter-spacing: 0.78px;
+}
+.footer__logo {
+  font-size: 24px;
+  color: #ffffff;
+  font-family: "Raleway";
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    letter-spacing: 0.78px;
+    font-size: 26px;
+  }
 }
 .footer__logo:focus {
   outline: none;
@@ -629,9 +677,11 @@ body {
 .footer__link:focus, .footer__link-white:focus {
   outline: none;
 }
-.footer__networks {
-  padding-top: 12px;
-  margin-left: 70px;
+@media screen and (min-width: 1200px) {
+  .footer__networks {
+    padding-top: 12px;
+    margin-left: 70px;
+  }
 }
 .footer__title {
   color: #ffffff;
@@ -663,6 +713,15 @@ body {
   height: 20px;
   fill: #ffffff;
 }
+.footer__mailing-box {
+  margin-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__mailing-box {
+    margin-left: auto;
+    margin-top: 0;
+  }
+}
 .footer__mailing {
   margin-top: 12px;
   margin-left: 93px;
@@ -674,11 +733,16 @@ body {
   color: #ffffff;
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.14;
+  line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
-  display: block;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__mailing-signature {
+    text-align: start;
+  }
 }
 .footer__mailing-input {
   width: 358px;

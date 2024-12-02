@@ -1,6 +1,13 @@
 .footer>.container {
     display: flex;
-}
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 0px auto;
+        gap: 60px;
+        @media screen and (min-width: 1200px) {
+            text-align: start;
+        }
+    }
 
 
 .footer {
@@ -8,6 +15,18 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
+
+    &__address-box {
+         width: 100%;
+      text-align: center;
+      @media screen and (min-width: 768px) {
+    width: auto;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+        text-align: start;
+      }
+    }
 &__logo-first {
     color: $accent-color;
     font-family: Raleway;
@@ -25,6 +44,22 @@
     line-height: 1.38;
     letter-spacing: 0.78px;
 }
+
+&__logo {
+       font-size: 24px;
+      color: $title-color;
+      font-family: "Raleway";
+      line-height: normal;
+      letter-spacing: 0.72px;
+      
+     
+    @media screen and (min-width: 1200px) {
+    
+      letter-spacing: 0.78px;
+      font-size: 26px;
+    }
+}
+
 
 &__logo:focus {
     outline: none;
@@ -72,8 +107,12 @@
 }
 
 &__networks {
-    padding-top: 12px;
-    margin-left: 70px;
+
+      
+      @media screen and (min-width: 1200px) {
+        padding-top: 12px;
+        margin-left: 70px;
+    }
 }
 
 &__title {
@@ -114,6 +153,15 @@
     fill: $title-color;
 }
 
+&__mailing-box {
+ margin-top: 60px;
+      @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    margin-top: 0;
+      }
+
+}
+
 &__mailing {
     margin-top: 12px;
     margin-left: 93px;
@@ -127,11 +175,16 @@
     color: $title-color;
     font-size: 14px;
     font-weight: 700;
-    line-height: 1.14;
+    line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 20px;
-    display: block;
+    text-align: center;
+
+
+    @media screen and (min-width: 1200px) {
+    text-align: start;
+    }
 }
 
 &__mailing-input {
