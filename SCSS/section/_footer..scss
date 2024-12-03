@@ -153,14 +153,7 @@
     fill: $title-color;
 }
 
-&__mailing-box {
- margin-top: 60px;
-      @media screen and (min-width: 1200px) {
-    margin-left: auto;
-    margin-top: 0;
-      }
 
-}
 
 &__mailing {
     margin-top: 12px;
@@ -169,6 +162,19 @@
 
 &__mailing-form {
     display: flex;
+    flex-direction: column;
+}
+
+
+&__mailing-box {
+ margin-top: 60px;
+ display: flex;
+ flex-direction: column;
+      @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    margin-top: 0;
+      }
+
 }
 
 &__mailing-signature {
