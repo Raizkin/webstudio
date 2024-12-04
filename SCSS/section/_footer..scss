@@ -1,9 +1,11 @@
 .footer>.container {
     display: flex;
+    justify-content: center;
         flex-wrap: wrap;
         text-align: center;
         padding: 0px auto;
         gap: 60px;
+        
         @media screen and (min-width: 1200px) {
             text-align: start;
         }
@@ -18,12 +20,11 @@
 
     &__address-box {
          width: 100%;
-      text-align: center;
+         text-align: center;
       @media screen and (min-width: 768px) {
     width: auto;
       }
       @media screen and (min-width: 1200px) {
-        margin-right: 70px;
         text-align: start;
       }
     }
@@ -111,7 +112,7 @@
       
       @media screen and (min-width: 1200px) {
         padding-top: 12px;
-        margin-left: 70px;
+    
     }
 }
 
@@ -157,12 +158,16 @@
 
 &__mailing {
     margin-top: 12px;
-    margin-left: 93px;
+    
 }
 
 &__mailing-form {
     display: flex;
-    flex-direction: column;
+flex-direction: column;
+
+@media screen and (min-width: 1200px){
+    flex-direction: row;
+}
 }
 
 
@@ -224,7 +229,11 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
     margin-top: 36px;
+    margin-left: auto;
+    margin-right: auto;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    
 }
 
 &__mailing-btn:hover,
