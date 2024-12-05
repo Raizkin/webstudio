@@ -131,6 +131,7 @@
 &__roster {
     margin-left: auto;
         display: none;
+        align-items: center;
 
  @media screen and (min-width: 768px) {
       flex-direction: column;
@@ -148,6 +149,7 @@
 
 &__roster-item {
     position: relative;
+    
 }
 
 &__roster-link {

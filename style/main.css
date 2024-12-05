@@ -164,6 +164,7 @@ body {
 .header__roster {
   margin-left: auto;
   display: none;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .header__roster {
@@ -761,6 +762,11 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding-left: 16px;
   margin-right: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__mailing-input {
+    width: 450px;
+  }
 }
 .footer__mailing-input:focus {
   outline: none;
