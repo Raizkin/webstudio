@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
     opacity: 1;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -18,33 +19,47 @@
 }
 
 .modal {
-    padding: 40px;
+   padding: 40px;
     border-radius: 4px;
     background: $title-color;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-    position: relative;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 
 &__title {
-    color: $modal-color;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.15;
-    letter-spacing: 0.6px;
-    margin-bottom: 12px;
+        width: 370px;
+        text-align: center;
+        margin: 0px auto;
+        color: $modal-color;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: 0.6px;
+        margin-bottom: 12px;
+
+        @media screen and (max-width: 479px) {
+            width: 250px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 448px;
+        }
 }
 
 &__signature {
-    color: $desk-color;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.67;
-    letter-spacing: 0.12px;
-    display: block;
-    margin-bottom: 4px;
+        width: 100%;
+        color: $desk-color;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.67;
+        letter-spacing: 0.12px;
+        display: block;
+        margin-bottom: 4px;
 }
 
 &__input-box {
@@ -53,7 +68,7 @@
 
 
 &__input {
-    width: 448px;
+      width: 100%;
     height: 40px;
     display: block;
     margin-bottom: 10px;
@@ -89,21 +104,21 @@
 
 
 &__textarea {
-    display: block;
-    width: 448px;
-    height: 120px;
-    border-radius: 4px;
-    border: 1px solid $modal-border-color;
-    resize: none;
-    padding: 12px 16px;
-    color: $modal-placehorlder;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.17;
-    letter-spacing: 0.12px;
-    margin-bottom: 20px;
-    display: block;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        width: 100%;
+        display: block;
+        height: 120px;
+        border-radius: 4px;
+        border: 1px solid $modal-border-color;
+        resize: none;
+        padding: 12px 16px;
+        color: $modal-placehorlder;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.17;
+        letter-spacing: 0.12px;
+        margin-bottom: 20px;
+        display: block;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -123,47 +138,61 @@
 
 
 &__chekbox {
-    width: 16px;
     height: 15px;
     margin-right: 7px;
 }
 
 &__text {
-    color: $desk-color;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
+        color: $desk-color;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.71;
+        letter-spacing: 0.36px;
+        margin-top: auto;
+        margin-bottom: auto;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.71;
+            letter-spacing: 0.42px;
+        }
 }
 
 
 &__link {
-    color: $accent-color;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
-    text-decoration-line: underline;
+        color: $accent-color;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.71;
+        letter-spacing: 0.36px;
+        text-decoration-line: underline;
+        
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.71;
+            letter-spacing: 0.42px;
+        }
 }
 
 
 
 &__btn {
-    padding: 10px 52px;
-    border-radius: 4px;
-    background: $modal-btn;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    border: none;
-    color: $title-color;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.88;
-    letter-spacing: 0.96px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 40px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 10px 52px;
+        border-radius: 4px;
+        background: $modal-btn;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        border: none;
+        color: $title-color;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.88;
+        letter-spacing: 0.96px;
+        display: block;
+        margin: 30px auto 0px auto;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
