@@ -151,7 +151,7 @@
           <ul class="make__items">
             <li class="make__item">
               <picture>
-                         <source srcset="../img/decstop/computer-decstop@1x.webp 1x, ../img/decstop/computer-decstop@2x.webp 2x" media="(min-width: 1200px)">
+                         <source srcset="./img/decstop/computer-decstop@1x.webp 1x, ./img/decstop/computer-decstop@2x.webp 2x" media="(min-width: 1200px)">
               <img
                 src="./img/computer.jpg"
                 alt="Програмування"
@@ -162,7 +162,7 @@
             </li>
             <li class="make__item">
               <picture>
-                <source srcset="../img/decstop/smartphone-decstop@1x.webp 1x, ../img/decstop/smartphone-decstop@2x.webp 2x" media="(min-width: 1200px)">
+                <source srcset="./img/decstop/smartphone-decstop@1x.webp 1x, ./img/decstop/smartphone-decstop@2x.webp 2x" media="(min-width: 1200px)">
               <img
                 src="./img/phone.jpg"
                 alt="Вибирати дизайн сайту"
@@ -173,7 +173,7 @@
             </li>
             <li class="make__item">
               <picture>
-             <source srcset="../img/decstop/board-decstop@1x.webp 1x, ../img/decstop/board-decstop@2x.webp 2x" media="(min-width: 1200px)">
+             <source srcset="./img/decstop/board-decstop@1x.webp 1x, ./img/decstop/board-decstop@2x.webp 2x" media="(min-width: 1200px)">
               <img
                 src="./img/tablet.jpg"
                 alt="Підбір кольорів на планшеті"
@@ -192,15 +192,36 @@
           <ul class="team__items">
             <li class="team__item">
               <picture>
-                      <source srcset="./img/decstop/igor-decstop@1x.webp 1x, ./img/decstop/igor-decstop@2x.webp 2x" media="(min-width: 1200px)">
-                        <source srcset="./img/tablet/igor-tablet@1x.webp 1x, ./img/tablet/igor-tablet@2x.webp 2x" media="(min-width: 768px)">
-                        <source srcset="./img/mobile/igor-mobile@1x.webp 1x, ./img/mobile/igor-mobile@2x.webp 2x"  media="(max-width: 767px)">  
-                           <img
-                src="./img/igor.jpg"
-                alt="Ігор Дем'яненко"
-                class="team__img"
-              />
-              </picture>
+  <source
+    srcset="
+      ./img/decstop/igor-decstop@1x.webp 1x,
+      ./img/decstop/igor-decstop@2x.webp 2x
+    "
+    media="(min-width: 1200px)"
+  />
+
+  <source
+    srcset="
+      ./img/tablet/igor-tablet@1x.webp 1x,
+      ./img/tablet/igor-tablet@2x.webp 2x
+    "
+    media="(min-width: 768px)"
+  />
+
+  <source
+    srcset="
+      ./img/mobile/igor-mobile@1x.webp 1x,
+      ./img/mobile/igor-mobile@2x.webp 2x
+    "
+    media="(max-width: 767px)"
+  />
+
+  <img
+    src="./img/igor.jpg"
+    alt="Ігор Дем'яненко"
+    class="team__img"
+  />
+</picture>
               <div class="team__box-item">
                 <h3 class="team__heading">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
